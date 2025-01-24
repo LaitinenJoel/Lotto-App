@@ -55,7 +55,7 @@ private static void chooseMode() {
 }
 ```
 
-## Screenshots
+## Screenshot
 Here is a screenshot of what the `chooseMode()` method (code example above) displays in the terminal after the program has been executed:
 
 ![image](https://github.com/user-attachments/assets/5f41a834-cbb0-488e-b492-d0bf71cad4fb)
