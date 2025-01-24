@@ -56,7 +56,7 @@ private static void chooseMode() {
 ```
 
 ## Screenshot
-Here is a screenshot of what the `chooseMode()` method (code example above) displays in the terminal after the program has been executed:
+Here is a screenshot of what the `chooseMode()` method (code example above) displays in the terminal after the user has picked the standard mode (normal lotto) and given seven numbers:
 
 ![image](https://github.com/user-attachments/assets/5f41a834-cbb0-488e-b492-d0bf71cad4fb)
 
