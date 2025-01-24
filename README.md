@@ -1,5 +1,5 @@
 # LOTTO APP
-## Motivation for creating this
+## Overview
 This started as a school project, but I have afterward, on my own, modified and expanded it. This is partly out of interest to revisit an old project, but also to put it on public display in the search for a job in the field of programming.
 
 ## Build status
@@ -8,13 +8,8 @@ This is version 1.1. The standard mode (normal lotto) and secondary mode (how ma
 ## Code style
 This program is coded entirely with Java.
 
-## Screenshots
-An idea of what this does:
-
-![image](https://github.com/user-attachments/assets/5f41a834-cbb0-488e-b492-d0bf71cad4fb)
-
 ## Code example
-This is one method from the Main class.
+This is one method from the Main class which asks the user which mode, standard or secondary, they'd like to pick. It then performs the necessary operations and displays the end result to the user.
 ```
 private static void chooseMode() {
         System.out.println("");
@@ -27,38 +22,43 @@ private static void chooseMode() {
         int mode = MyConsole.readInt(1,2,"Please give a number.","Please give a number between 1 and 2.");
 
         if (mode == 1) {
-            int[] userNumbers = userInputs();
-            System.out.println("YOUR NUMBERS:");
-            for (int i = 0; i < userNumbers.length - 1; i++) {
-                System.out.print(userNumbers[i] + ", ");
-                if (i == userNumbers.length - 2) {
-                    System.out.print(userNumbers[i + 1]);
+                int[] userNumbers = userInputs();
+                System.out.println("YOUR NUMBERS:");
+                for (int i = 0; i < userNumbers.length - 1; i++) {
+                        System.out.print(userNumbers[i] + ", ");
+                        if (i == userNumbers.length - 2) {
+                                System.out.print(userNumbers[i + 1]);
+                        }
                 }
-            }
 
-            System.out.println("");
-            int[] lottoNumbers = calculateLotto();
-            System.out.println("LOTTO NUMBERS:");
-            for (int i = 0; i < lottoNumbers.length - 1; i++) {
+        System.out.println("");
+        int[] lottoNumbers = calculateLotto();
+        System.out.println("LOTTO NUMBERS:");
+        for (int i = 0; i < lottoNumbers.length - 1; i++) {
                 System.out.print(lottoNumbers[i] + ", ");
                 if (i == lottoNumbers.length - 2) {
-                    System.out.print(lottoNumbers[i + 1]);
+                        System.out.print(lottoNumbers[i + 1]);
                 }
-            }
+        }
 
-            System.out.println("");
-            System.out.println("You got " + Arrays.containsSameValues(userNumbers,lottoNumbers) + " right.");
+        System.out.println("");
+        System.out.println("You got " + Arrays.containsSameValues(userNumbers,lottoNumbers) + " right.");
         } else if (mode == 2) {
-            int[] time = howManyYears();
+                int[] time = howManyYears();
 
-            for (int i = 0; i < time.length; i++) {
-                System.out.println("You got " + (i + 1) + " right. It took " + time[i] + " years.");
-            }
+                for (int i = 0; i < time.length; i++) {
+                        System.out.println("You got " + (i + 1) + " right. It took " + time[i] + " years.");
+                }
         }
 
         tryAgain();
-    }
+}
 ```
+
+## Screenshots
+Here is a screenshot of what the `chooseMode()` method (code example above) displays in the terminal after the program has been executed:
+
+![image](https://github.com/user-attachments/assets/5f41a834-cbb0-488e-b492-d0bf71cad4fb)
 
 ## Installation and usage
 1. Download and insert the `app` file anywhere on your computer.
