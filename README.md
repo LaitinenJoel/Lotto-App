@@ -61,7 +61,7 @@ Here is a screenshot of what the `chooseMode()` method (code example above) disp
 ![image](https://github.com/user-attachments/assets/5f41a834-cbb0-488e-b492-d0bf71cad4fb)
 
 ## Installation and usage
-1. Download the `app` folder using [url](https://download-directory.github.io/) or download the files inside the folder manually. You can insert them anywhere on your computer, but make sure the file structure remains intact.
+1. Download the `app` folder using [https://download-directory.github.io/](https://download-directory.github.io/) or download the files inside the folder manually. You can insert them anywhere on your computer, but make sure the file structure remains intact.
 2. Open the Windows terminal in the directory location you placed the `app` folder in. Any application capable of simulating the terminal should work as well.
 3. Type `javac -d . app/Main.java app/util/*.java` in the terminal to compile the files.
 4. Type `java app/Main` to run the program.
