@@ -1,11 +1,11 @@
 # LOTTO APP
-This is a lotto application that asks you for seven numbers, then chooses seven numbers of its own, and tells you how many of the numbers are matching. It also features an alternate mode where it calculates how many years it would take for you to win with the numbers you've chosen if a new lotto were randomized every week.
+This is a lotto application that asks you for seven numbers, then chooses seven numbers of its own, and tells you how many of the numbers are matching. It also features an alternate mode where it calculates how many years it would take for you to win with the numbers you've chosen if a new lotto were randomized every week. It has a command line interface, but not a graphical interface.
 
 ## Overview
 This started as a school project, but I have afterward, on my own, modified and expanded it. This is partly out of interest to revisit an old project, but also to put it on public display in the search for a job in the field of programming.
 
 ## Build status
-This is version 1.1. The standard mode (normal lotto) and secondary mode (how many years it takes for you to win) are functional. More modes may be added in the future.
+This is version 1.1. The standard mode (normal lotto) and secondary mode (how many years it takes for you to win) are functional. More modes, as well as a graphical user interface, may be added in the future.
 
 ## Code style
 This program is coded entirely with Java.
